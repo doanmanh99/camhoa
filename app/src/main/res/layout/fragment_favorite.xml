@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_marginTop="@dimen/_15sdp"
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/background_radio_group"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbFavorite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_check"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Yêu thích"
+            android:textColor="@drawable/checked_text_color"
+            android:textSize="@dimen/_18ssp" />
+
+        <RadioButton
+            android:id="@+id/rbTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_check"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Chủ đề"
+            android:textColor="@drawable/checked_text_color"
+            android:textSize="@dimen/_18ssp" />
+    </RadioGroup>
+<!--    <com.example.camhoa.widget.NonViewPager-->
+<!--        android:id="@+id/viewPager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+    <FrameLayout
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
